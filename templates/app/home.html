@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+{% extends 'app/base.html' %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scope India Website</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+{% block content %}
+<body style="background-image:url('{% static 'css/image.png' %}');background-repeat:no-repeat;background-size:100%;">
+<!--<h1>Scope India</h1>-->
+<!--<img src="{% static 'css/image.png' %}">-->
+{% endblock %}
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% extends 'app/base.html' %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+</head>
+<body>
+{% block content %}
+
+<h1>ContactForm</h1>
+<form method="post" action=".">
+    {% csrf_token %}
+
+    {{ form.as_p }}
+    <button>Send Email</button>
+</form>
+<br/>
+<img src="{% static 'css/image2.jpg' %}">
+{% endblock %}
+</body>
+</html>
